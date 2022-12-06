@@ -165,44 +165,69 @@ a {
   }
 }
 
-.wrraper .user-box {
+.wrraper .user-box,
+.wrraper .Draft-box {
   padding: 10px 15px;
   text-align: center;
   background-color: white;
   border-radius: 10px;
 }
 
-.wrraper .user-box .intro {
+.wrraper .Draft-box {
+  text-align: inherit;
+}
+
+.wrraper .user-box .intro,
+.wrraper .Draft-box .intro {
   width: fit-content;
   letter-spacing: 1px;
 }
 
-.wrraper .user-box .icon-holder {
-  padding: 10px;
-  width: fit-content;
-  margin: 10px auto;
-}
-
-.wrraper .user-box .icon-holder i {
-  font-size: 25px;
-  color: #3a638d;
-}
-
-.ri-user-fill:before {
-  content: "\f25f";
-  width: 20px;
-  height: 20px;
+.wrraper .user-box .personal-img-holder img {
+  width: 100px;
+  height: 100px;
   background-color: #fff;
-  padding: 5px;
+  padding: 6px;
   border-radius: 50%;
-  border: 2px solid #3a638d;
+  border: 2px solid #0075ff;
   border-top-color: transparent;
+  margin-bottom: 15px;
 }
 
-.wrraper .user-box .edit-info button {
+.wrraper .user-box .account-stats .account-info-list {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrraper .user-box .edit-info button,
+.wrraper .Draft-box .textarea .button button {
   border: none;
   color: white;
-  background-color: #3a638d;
+  background-color: #0075ff;
   padding: 5px;
   border-radius: 10px;
+}
+
+.wrraper .Draft-box .input {
+  width: 100%;
+}
+
+.wrraper .Draft-box .input input,
+.wrraper .Draft-box .textarea textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #eee;
+  border-radius: 5px;
+  resize: none;
+  padding: 5px;
+}
+
+.wrraper .Draft-box .input {
+  margin-bottom: 10px;
+}
+
+.wrraper .Draft-box .button {
+  text-align: end;
 }
