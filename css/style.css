@@ -166,19 +166,25 @@ a {
 }
 
 .wrraper .user-box,
-.wrraper .Draft-box {
+.wrraper .Draft-box,
+.wrraper .Targets-box,
+.wrraper .Tickets-box {
   padding: 10px 15px;
   text-align: center;
   background-color: white;
   border-radius: 10px;
 }
 
-.wrraper .Draft-box {
+.wrraper .Draft-box,
+.wrraper .Targets-box,
+.wrraper .Tickets-box {
   text-align: inherit;
 }
 
 .wrraper .user-box .intro,
-.wrraper .Draft-box .intro {
+.wrraper .Draft-box .intro,
+.wrraper .Targets-box .intro,
+.wrraper .Tickets-box .intro {
   width: fit-content;
   letter-spacing: 1px;
 }
@@ -230,4 +236,124 @@ a {
 
 .wrraper .Draft-box .button {
   text-align: end;
+}
+
+.wrraper .Targets-box .details-unorderd-list {
+  padding: 0;
+}
+
+.wrraper .Targets-box .details-unorderd-list li {
+  display: flex;
+  gap: 25px;
+}
+
+.wrraper .Targets-box .details-unorderd-list li:not(li:last-child) {
+  margin: 0 0 20px;
+}
+
+.wrraper .Targets-box .details-unorderd-list li .icon-holder {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0075ff33;
+  margin-right: 15px;
+}
+
+.wrraper .Targets-box .details-unorderd-list li .icon-holder i {
+  font-size: 30px;
+  color: #0075ff;
+}
+
+.wrraper .Targets-box .details-unorderd-list li .light-yellow {
+  background-color: #f59e0b33;
+}
+
+.wrraper .Targets-box .details-unorderd-list li .light-yellow i {
+  color: #f59e0b;
+}
+
+.wrraper .Targets-box .details-unorderd-list li .light-green {
+  background-color: #22c55e33;
+}
+
+.wrraper .Targets-box .details-unorderd-list li .light-green i {
+  color: #22c55e;
+}
+
+.wrraper .Targets-box .details-unorderd-list li .details>p {
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.wrraper .Targets-box .details-unorderd-list li .details>span {
+  display: block;
+  margin: 10px 0;
+}
+
+.wrraper .Tickets-box .stats-box-holder {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.wrraper .Tickets-box .stats-box-holder .total,
+.wrraper .Tickets-box .stats-box-holder .Pending,
+.wrraper .Tickets-box .stats-box-holder .closed,
+.wrraper .Tickets-box .stats-box-holder .deleted {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.wrraper .Tickets-box .stats-box-holder .total .icon-holder,
+.wrraper .Tickets-box .stats-box-holder .Pending .icon-holder,
+.wrraper .Tickets-box .stats-box-holder .closed .icon-holder,
+.wrraper .Tickets-box .stats-box-holder .deleted .icon-holder {
+  font-size: 30px;
+  margin-bottom: -10px;
+}
+
+.wrraper .Tickets-box .stats-box-holder .total .number-holder,
+.wrraper .Tickets-box .stats-box-holder .Pending .number-holder,
+.wrraper .Tickets-box .stats-box-holder .closed .number-holder,
+.wrraper .Tickets-box .stats-box-holder .deleted .number-holder {
+  margin-bottom: 5px;
+  font-size: 25px;
+  color: black;
+}
+
+.wrraper .Tickets-box .stats-box-holder .total {
+  width: calc(50% - 10px);
+}
+
+.wrraper .Tickets-box .stats-box-holder .total .icon-holder i {
+  color: #f59e0b;
+}
+
+.wrraper .Tickets-box .stats-box-holder .Pending .icon-holder i {
+  color: #0075ff;
+}
+
+.wrraper .Tickets-box .stats-box-holder .closed .icon-holder i {
+  color: #22c55e;
+}
+
+.wrraper .Tickets-box .stats-box-holder .deleted .icon-holder i {
+  color: #f44336;
+}
+
+.wrraper .Tickets-box .stats-box-holder .Pending {
+  width: calc(50% - 10px);
+}
+
+.wrraper .Tickets-box .stats-box-holder .closed {
+  width: calc(50% - 10px);
+}
+
+.wrraper .Tickets-box .stats-box-holder .deleted {
+  width: calc(50% - 10px);
 }
