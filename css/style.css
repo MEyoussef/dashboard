@@ -170,7 +170,8 @@ a {
 .wrraper .Targets-box,
 .wrraper .Tickets-box,
 .wrraper .news-box,
-.wrraper .tasks-box {
+.wrraper .tasks-box,
+.wrraper .search-box {
   padding: 10px 15px;
   text-align: center;
   background-color: white;
@@ -181,7 +182,8 @@ a {
 .wrraper .Targets-box,
 .wrraper .Tickets-box,
 .wrraper .news-box,
-.wrraper .tasks-box {
+.wrraper .tasks-box,
+.wrraper .search-box {
   text-align: inherit;
 }
 
@@ -190,8 +192,8 @@ a {
 .wrraper .Targets-box .intro,
 .wrraper .Tickets-box .intro,
 .wrraper .news-box .intro,
-.wrraper .tasks-box .intro {
-  width: fit-content;
+.wrraper .tasks-box .intro,
+.wrraper .search-box .intro {
   letter-spacing: 1px;
 }
 
@@ -461,4 +463,32 @@ a {
 
 .wrraper .tasks-box .tasks-details-box .tasks-list li .tasks-info:nth-child(7) {
   text-decoration: line-through;
+}
+
+.wrraper .search-box .intro .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrraper .search-box .search-details-box .search-list {
+  padding: 0;
+  margin: 0;
+}
+
+.wrraper .search-box .search-details-box .search-list li {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.wrraper .search-box .search-details-box li .search-count-div {
+  background-color: #eee;
+  height: fit-content;
+  padding: 5px;
+  border-radius: 10px;
+  width: 45px;
+  text-align: center;
+  font-size: 15px;
 }
