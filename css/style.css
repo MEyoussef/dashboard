@@ -169,7 +169,8 @@ a {
 .wrraper .Draft-box,
 .wrraper .Targets-box,
 .wrraper .Tickets-box,
-.wrraper .news-box {
+.wrraper .news-box,
+.wrraper .tasks-box {
   padding: 10px 15px;
   text-align: center;
   background-color: white;
@@ -179,7 +180,8 @@ a {
 .wrraper .Draft-box,
 .wrraper .Targets-box,
 .wrraper .Tickets-box,
-.wrraper .news-box {
+.wrraper .news-box,
+.wrraper .tasks-box {
   text-align: inherit;
 }
 
@@ -187,7 +189,8 @@ a {
 .wrraper .Draft-box .intro,
 .wrraper .Targets-box .intro,
 .wrraper .Tickets-box .intro,
-.wrraper .news-box .intro {
+.wrraper .news-box .intro,
+.wrraper .tasks-box .intro {
   width: fit-content;
   letter-spacing: 1px;
 }
@@ -438,4 +441,24 @@ a {
   .wrraper .news-list>li button {
     margin-top: 15px;
   }
+}
+
+.wrraper .tasks-box .tasks-details-box .tasks-list {
+  padding: 0;
+  margin: 0;
+}
+
+.wrraper .tasks-box .tasks-details-box .tasks-list li {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrraper .tasks-box .tasks-details-box .tasks-list .tasks-info p {
+  margin-bottom: 5px;
+}
+
+.wrraper .tasks-box .tasks-details-box .tasks-list li .tasks-info:nth-child(7) {
+  text-decoration: line-through;
 }
