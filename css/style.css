@@ -173,7 +173,8 @@ a {
 .wrraper .tasks-box,
 .wrraper .search-box,
 .wrraper .uploads-box,
-.wrraper .project-box {
+.wrraper .project-box,
+.wrraper .Reminders-box {
   padding: 10px 15px;
   text-align: center;
   background-color: white;
@@ -187,8 +188,10 @@ a {
 .wrraper .tasks-box,
 .wrraper .search-box,
 .wrraper .uploads-box,
-.wrraper .project-box {
+.wrraper .project-box,
+.wrraper .Reminders-box {
   text-align: inherit;
+  position: relative;
 }
 
 .wrraper .user-box .intro,
@@ -199,7 +202,8 @@ a {
 .wrraper .tasks-box .intro,
 .wrraper .search-box .intro,
 .wrraper .uploads-box .intro,
-.wrraper .project-box .intro {
+.wrraper .project-box .intro,
+.wrraper .Reminders-box .intro {
   letter-spacing: 1px;
 }
 
@@ -586,8 +590,74 @@ a {
   opacity: 0.5;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1630px) {
+  .wrraper .project-box .img-holder {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+@media (max-width: 1350px) {
   .wrraper .project-box .img-holder {
     display: none;
   }
+}
+
+.wrraper .Reminders-box .reminders-details .reminders-box-details {
+  padding: 0px;
+  margin: 0px;
+}
+
+.wrraper .Reminders-box .reminders-details .reminders-box-details li{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.wrraper .Reminders-box .reminders-details .reminders-box-details li .line-1,
+.wrraper .Reminders-box .reminders-details .reminders-box-details li .line-2,
+.wrraper .Reminders-box .reminders-details .reminders-box-details li .line-3,
+.wrraper .Reminders-box .reminders-details .reminders-box-details li .line-4 {
+  border-right-style: solid;
+  border-right-width: 2px;
+  padding-right: 10px;
+}
+
+.wrraper .Reminders-box .reminders-details .reminders-box-details li .icon-holder > i{
+  border-radius: 30px;
+}
+
+.wrraper .Reminders-box .reminders-details .reminders-box-details li .icon-holder > .icon-1{
+  color: #0075ff;
+}
+
+.wrraper .Reminders-box .reminders-details .reminders-box-details li .line-1 {
+  border-right-color: #0075ff;
+}
+
+.wrraper .Reminders-box .reminders-details .reminders-box-details li .icon-holder > .icon-2{
+  color: #22c55e;
+}
+
+.wrraper .Reminders-box .reminders-details .reminders-box-details li .line-2 {
+  border-right-color: #22c55e;
+}
+
+.wrraper .Reminders-box .reminders-details .reminders-box-details li .icon-holder > .icon-3{
+  color: #f59e0b;
+}
+
+.wrraper .Reminders-box .reminders-details .reminders-box-details li .line-3 {
+  border-right-color: #f59e0b;
+}
+
+.wrraper .Reminders-box .reminders-details .reminders-box-details li .icon-holder > .icon-4{
+  color: #f44336;
+}
+
+.wrraper .Reminders-box .reminders-details .reminders-box-details li .line-4 {
+  border-right-color: #f44336;
 }
