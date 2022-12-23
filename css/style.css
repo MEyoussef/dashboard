@@ -718,6 +718,7 @@ a {
   .wrraper .post-box .like-and-comment-section {
     display: block;
   }
+
   .wrraper .post-box .like-and-comment-section .comment,
   .wrraper .post-box .like-and-comment-section .dislike {
     margin-bottom: 10px;

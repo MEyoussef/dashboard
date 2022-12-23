@@ -5,6 +5,13 @@
     margin: 5px;
     cursor: pointer;
 }
+
+.box {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 .box .question-section,
 .box .question-body {
     text-align: center;

@@ -1,3 +1,22 @@
+.wrraper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 15px;
+    padding: 10px 15px;
+}
+
+@media(max-width:767px) {
+    .wrraper {
+        grid-template-columns: minmax(200px, 1fr);
+    }
+}
+
+.box {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 .box .phone-icon,
 .box .mail-icon {
     width: 35px;
@@ -5,12 +24,15 @@
     font-size: 19px;
     background-color: #eee;
     border-radius: 50%;
-    height: 35px;;
+    height: 35px;
+    ;
     justify-content: center;
 }
+
 .box .friend-icon-details {
     font-size: 19px;
 }
+
 .box .img-holder img {
     border-radius: 50%;
     width: 150px;
