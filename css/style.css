@@ -174,7 +174,8 @@ a {
 .wrraper .search-box,
 .wrraper .uploads-box,
 .wrraper .project-box,
-.wrraper .Reminders-box {
+.wrraper .Reminders-box,
+.wrraper .post-box {
   padding: 10px 15px;
   text-align: center;
   background-color: white;
@@ -189,7 +190,8 @@ a {
 .wrraper .search-box,
 .wrraper .uploads-box,
 .wrraper .project-box,
-.wrraper .Reminders-box {
+.wrraper .Reminders-box,
+.wrraper .post-box {
   text-align: inherit;
   position: relative;
 }
@@ -203,7 +205,8 @@ a {
 .wrraper .search-box .intro,
 .wrraper .uploads-box .intro,
 .wrraper .project-box .intro,
-.wrraper .Reminders-box .intro {
+.wrraper .Reminders-box .intro,
+.wrraper .post-box .intro {
   letter-spacing: 1px;
 }
 
@@ -541,6 +544,7 @@ a {
 .wrraper .project-box .project-details {
   padding: 0px;
   margin: 0px;
+  position: relative;
 }
 
 .wrraper .project-box .project-details li {
@@ -551,12 +555,8 @@ a {
   font-size: 20px;
 }
 
-.wrraper .project-box .project-details li .icon-holder {
-  position: relative;
-}
-
-.wrraper .project-box .project-details li .icon-holder > i,
-.wrraper .project-box .project-details li .Not-icon-holder > i {
+.wrraper .project-box .project-details li .icon-holder>i,
+.wrraper .project-box .project-details li .Not-icon-holder>i {
   color: #0075ff;
   outline: 2px solid #0075ff;
   border: 1px solid #fff;
@@ -564,25 +564,35 @@ a {
 }
 
 @keyframes mymove {
-  0%   {color: white;}
-  25%  {color: #0075ff;}
-  50%  {color: white;}
-  75%  {color: #0075ff;}
-  100% {color: white;}
+  0% {
+    color: white;
+  }
+
+  25% {
+    color: #0075ff;
+  }
+
+  50% {
+    color: white;
+  }
+
+  75% {
+    color: #0075ff;
+  }
+
+  100% {
+    color: white;
+  }
 }
 
-.wrraper .project-box .project-details li .icon-holder > .icon-3 {
+.wrraper .project-box .project-details li .icon-holder>.icon-3 {
   animation: mymove 2s infinite;
 }
 
-.wrraper .project-box .project-details li .icon-holder::after {
+.wrraper .project-box .project-details::after {
   content: "";
   position: absolute;
-  width: 2px;
-  height: 26px;
-  background-color: #0075ff;
-  left: 50%;
-  top: 26px;
+
 }
 
 .wrraper .project-box .img-holder {
@@ -609,11 +619,10 @@ a {
   margin: 0px;
 }
 
-.wrraper .Reminders-box .reminders-details .reminders-box-details li{
+.wrraper .Reminders-box .reminders-details .reminders-box-details li {
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-bottom: 15px;
   font-size: 20px;
 }
 
@@ -626,11 +635,11 @@ a {
   padding-right: 10px;
 }
 
-.wrraper .Reminders-box .reminders-details .reminders-box-details li .icon-holder > i{
+.wrraper .Reminders-box .reminders-details .reminders-box-details li .icon-holder>i {
   border-radius: 30px;
 }
 
-.wrraper .Reminders-box .reminders-details .reminders-box-details li .icon-holder > .icon-1{
+.wrraper .Reminders-box .reminders-details .reminders-box-details li .icon-holder>.icon-1 {
   color: #0075ff;
 }
 
@@ -638,7 +647,7 @@ a {
   border-right-color: #0075ff;
 }
 
-.wrraper .Reminders-box .reminders-details .reminders-box-details li .icon-holder > .icon-2{
+.wrraper .Reminders-box .reminders-details .reminders-box-details li .icon-holder>.icon-2 {
   color: #22c55e;
 }
 
@@ -646,7 +655,7 @@ a {
   border-right-color: #22c55e;
 }
 
-.wrraper .Reminders-box .reminders-details .reminders-box-details li .icon-holder > .icon-3{
+.wrraper .Reminders-box .reminders-details .reminders-box-details li .icon-holder>.icon-3 {
   color: #f59e0b;
 }
 
@@ -654,10 +663,64 @@ a {
   border-right-color: #f59e0b;
 }
 
-.wrraper .Reminders-box .reminders-details .reminders-box-details li .icon-holder > .icon-4{
+.wrraper .Reminders-box .reminders-details .reminders-box-details li .icon-holder>.icon-4 {
   color: #f44336;
 }
 
 .wrraper .Reminders-box .reminders-details .reminders-box-details li .line-4 {
   border-right-color: #f44336;
+}
+
+.wrraper .Reminders-box .reminders-details .reminders-box-details li .content-holder span:first-child {
+  display: block;
+  font-size: 17px
+}
+
+.wrraper .Reminders-box .reminders-details .reminders-box-details li .content-holder span:last-child {
+  font-size: 15px
+}
+
+.wrraper .post-box .post-author-details,
+.wrraper .post-box .like-and-comment-section {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.wrraper .post-box .like-and-comment-section {
+  justify-content: space-around;
+}
+
+.wrraper .post-box .post-author-details img {
+  width: 50px;
+  height: 50px;
+}
+
+.wrraper .post-box .post-author-details .author-name>p {
+  margin-bottom: 0px;
+}
+
+
+.wrraper .post-box .like-and-comment-section .like,
+.wrraper .post-box .like-and-comment-section .comment,
+.wrraper .post-box .like-and-comment-section .dislike {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.wrraper .post-box .like-and-comment-section .like {
+  border-left: 0px;
+}
+
+@media (max-width: 767px) {
+  .wrraper .post-box .like-and-comment-section {
+    display: block;
+  }
+  .wrraper .post-box .like-and-comment-section .comment,
+  .wrraper .post-box .like-and-comment-section .dislike {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
 }
