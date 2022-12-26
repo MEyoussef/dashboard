@@ -82,7 +82,7 @@ a {
 /* head start */
 .head {
   justify-content: space-between;
-  padding: 10px 15px;
+  padding: 15px;
   background-color: #fff;
 }
 
@@ -521,7 +521,7 @@ a {
 }
 
 .wrraper .uploads-box .uploads-details-box .uploads-list li .flex-box2 .Description-file p {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .wrraper .project-box .project-details {

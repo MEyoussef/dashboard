@@ -31,12 +31,6 @@
     border-top-left-radius: 10px;
 }
 
-.box .course-content a {
-    padding: 5px 10px;
-    background-color: #0d6efd;
-    color: white;
-    border-radius: 5px;
-}
 
 .box .course-info {
     justify-content: space-between;

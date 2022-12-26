@@ -47,14 +47,6 @@
     font-size: 15px;
 }
 
-.box-plan button {
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: #212529;
-    color: white;
-}
-
 .box-plan .basic {
     background-color: #3594ca;
     outline: 2px solid #3594ca;
