@@ -230,15 +230,6 @@ a {
   justify-content: space-around;
 }
 
-.wrraper .user-box .edit-info button,
-.wrraper .Draft-box .textarea .button button {
-  border: none;
-  color: white;
-  background-color: #0075ff;
-  padding: 5px;
-  border-radius: 10px;
-}
-
 .wrraper .Draft-box .input {
   width: 100%;
 }
@@ -497,17 +488,6 @@ a {
   justify-content: space-between;
   padding-top: 15px;
   padding-bottom: 15px;
-}
-
-.wrraper .search-box .search-details-box li .search-count-div,
-.wrraper .uploads-box .uploads-details-box .uploads-list li span {
-  background-color: #eee;
-  height: fit-content;
-  padding: 5px;
-  border-radius: 10px;
-  width: 45px;
-  text-align: center;
-  font-size: 15px;
 }
 
 .wrraper .uploads-box .uploads-details-box .uploads-list {
@@ -895,7 +875,7 @@ a {
 }
 
 .projects table td {
-  padding: 15px;
+  padding: 5px 10px;
 }
 
 .projects tbody td {
@@ -927,10 +907,9 @@ a {
 }
 
 .projects table .label {
-  font-size: 13px;
   background-color: orange;
   color: white;
-  font-size: 13px;
+  font-size: 15px;
   padding: 5px 10px;
   border-radius: 5px;
 }

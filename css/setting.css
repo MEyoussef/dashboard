@@ -11,9 +11,104 @@
     }
 }
 
-.box {
+.wrraper .control-box,
+.wrraper .info-box,
+.wrraper .security-box {
     background-color: white;
     padding: 10px;
     border-radius: 10px;
     position: relative;
+}
+
+.wrraper .control-box .intro>h4,
+.wrraper .info-box .intro>h4,
+.wrraper .security-box .intro>h4 {
+    margin: 0px 0px 8px;
+    letter-spacing: 1px;
+}
+
+.wrraper .control-box .website-control>p,
+.wrraper .info-box .first-name,
+.wrraper .info-box .second-name,
+.wrraper .info-box .change-email-box {
+    margin: 10px 0px 0px;
+}
+
+.wrraper .control-box .website-control>p {
+    font-size: 18px;
+}
+
+.wrraper .control-box .fs-edit,
+.wrraper .info-box .fs-edit {
+    display: flex;
+    font-size: 14px;
+    align-items: center
+}
+
+.wrraper .control-box .open-and-close {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 0px 8px;
+}
+
+.wrraper .control-box textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.form-check-input {
+    font-size: 20px !important;
+}
+
+.wrraper .info-box .first-name .first-name-input,
+.wrraper .info-box .second-name .second-name-input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0px 0px;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.wrraper .info-box .change-email-box .change {
+    margin: 5px;
+}
+
+.wrraper .info-box .change-email {
+    width: 80%;
+    padding: 10px;
+    background: #f0f4f8;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    color: gray;
+}
+
+.wrraper .security-box .security-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrraper .security-box .security-list li .btn {
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.wrraper .security-box .security-list li .change {
+    background-color: #0075ff;
+    color: white;
+}
+
+.wrraper .security-box .security-list li .Devices {
+    background-color: #ddd;
+    color: black;
 }
